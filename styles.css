@@ -6,6 +6,7 @@ body {
     background-color: #fef6d8;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 main {
@@ -62,49 +63,9 @@ a:hover {
 	display: none;
 }
 
-@media (max-width:800px) {
-	.nav-button {
-		display: inline-block;
-		position: absolute;
-        width: 50px;
-        height: 50px;
-        padding-top: 12px;
-		right: 0px;
-		top: 0px;
-        font-size: 30px;
-        margin-right: 5px;
-        margin-top: 10px;
-	}
-    .nav-content {
-		position: absolute;
-		display: block;
-		width: 100%;
-		background-color: #412424;
-		height: 0px;
-		transition: all 0.3s ease-in;
-		overflow-y: hidden;
-		top: 70px;
-		left: 0px;
-        margin-top: 10px;
-	}
-    .nav-content li {
-        margin-top: 2em;
-    }
-    .nav-button > label:hover {
-		background-color: rgba(0, 0, 0, 0.3);
-	}
-    #nav-check:not(:checked) + .nav-content {
-		height: 0px;
-	}
-	#nav-check:checked + .nav-content {
-		height: calc(100vh - 50px);
-		overflow-y: auto;
-	}
-}
-
 header h1 {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .container {
@@ -262,36 +223,46 @@ footer {
     font-weight: bold;
 }
 
-@media screen and (max-width: 400px) {
-	.gallery-grid div { margin: 0; }
-	.gallery-grid { padding: 0; }
-
-}
-
-@media all and (min-width: 800px) {
-	.list-grid {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
+@media (max-width:800px) {
+	.nav-button {
+		display: inline-block;
+		position: absolute;
+        width: 50px;
+        height: 50px;
+        padding-top: 18px;
+		right: 0px;
+		top: 0px;
+        font-size: 30px;
+        margin-right: 5px;
+        margin-top: 10px;
 	}
-	.item {
-		padding: 5px;
-		width: 50%;
-		height: auto;
-		margin-top: 10px;
-		color: black;
-		text-align: left;
+    .nav-content {
+		position: absolute;
+		display: block;
+		width: 100%;
+		background-color: #412424;
+		height: 0px;
+		transition: all 0.3s ease-in;
+		overflow-y: hidden;
+		top: 70px;
+		left: 0px;
+        margin-top: 10px;
 	}
-    .team-item {
-        width: 30%;
+    .nav-content li {
+        margin-top: 2em;
     }
-}
+    .nav-button > label:hover {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+    #nav-check:not(:checked) + .nav-content {
+		height: 0px;
+	}
+	#nav-check:checked + .nav-content {
+		height: calc(100vh - 50px);
+		overflow-y: auto;
+	}
 
-@media all and (max-width: 799px) {
-	.list-grid {
+    .list-grid {
 		padding: 0;
 		margin: 0;
 		list-style: none;
@@ -307,4 +278,26 @@ footer {
 		color: black;
 		text-align: left;
 	}
+}
+
+
+@media screen and (max-width: 400px) {
+	.gallery-grid div { 
+        margin: 0; 
+    }
+
+	.gallery-grid { 
+        padding: 0; 
+    }
+
+    header h1 {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 260px) {
+    header h1 {
+        font-size: 0.6em;
+    }
 }
