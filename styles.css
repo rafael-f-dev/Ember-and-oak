@@ -130,9 +130,15 @@ h1 {
     margin-bottom: 10px;
 }
 
+.location h1 {
+    margin: 1em;
+}
+
 .location iframe {
-    width: 90vw;
-    height: 70vh;
+    width: 100%;              
+    max-width: 90vw;          
+    height: 70vh;           
+         
 }
 
 .overview-text {
