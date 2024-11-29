@@ -50,10 +50,17 @@ a:hover {
     text-indent: 20px;
     height: 80px;
     border: 0px;
+    overflow: hidden;
 }
 
 .nav-button {
     display: none;
+}
+
+.nav-button span {
+    display: block;
+    width: 30px;   
+    height: 3px; 
 }
 
 .nav-content {
@@ -225,6 +232,8 @@ footer a {
 }
 
 footer p {
+    margin-right: 0.2em;
+    margin-left: 0.2em;
     margin-bottom: 0.2em;
 }
 
