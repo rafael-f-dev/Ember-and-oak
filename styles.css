@@ -4,6 +4,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,10 +24,6 @@ main {
 img {
     width: 100%;
 }
-
-html {
-    scroll-behavior: smooth;
-  }
 
 a {
     color: inherit;
@@ -234,12 +231,14 @@ footer {
         width: 50px;
         height: 50px;
         padding-top: 18px;
-		right: 0px;
-		top: 0px;
+		right: 10px;
+		top: 25px;
         font-size: 30px;
-        margin-right: 5px;
-        margin-top: 10px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
 	}
+
     .nav-content {
 		position: absolute;
 		display: block;
@@ -252,15 +251,19 @@ footer {
 		left: 0px;
         margin-top: 10px;
 	}
+
     .nav-content li {
         margin-top: 2em;
     }
+
     .nav-button > label:hover {
 		background-color: rgba(0, 0, 0, 0.3);
 	}
+
     #nav-check:not(:checked) + .nav-content {
 		height: 0px;
 	}
+
 	#nav-check:checked + .nav-content {
 		height: calc(100vh - 50px);
 		overflow-y: auto;
