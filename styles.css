@@ -164,6 +164,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+#gallery h1 {
+    margin: 1em;
+}
+
 .gallery-grid {
    padding: 1vw;
    flex-flow: row wrap;
@@ -179,6 +183,10 @@ h1 {
 .gallery-grid img {
     width: 100%;
     height: auto;
+}
+
+#roasts h1 {
+    margin: 1em;
 }
 
 .grid2 {
@@ -212,6 +220,10 @@ h1 {
     font-weight: bold;
     font-style: normal;
     padding-right: 1px
+}
+
+#team h1 {
+    margin: 1em;
 }
 
 .grid3 {
